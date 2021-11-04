@@ -1,0 +1,51 @@
+[
+    {
+        "_id": "p101",
+        "txt": "My first post",
+        "createdAt": 1635858345,
+        "createdBy": {
+            "_id": "u101",
+            "username": "onchu",
+            "imgUrl": "https://robohash.org/onchu"
+        },
+        "loc": {
+            "lat": 11.11,
+            "lng": 22.22,
+            "name": "Tel Aviv"
+        },
+        "imgs": [
+            "https://robohash.org/p101"
+        ],
+        "comments": [
+            {
+                "_id": "c101",
+                "createdBy": {
+                    "_id": "u102",
+                    "username": "ronchi",
+                    "imgUrl": "https://robohash.org/ronchi"
+                },
+                "txt": "first comment",
+                "likedBy": [
+                    {
+                        "_id": "u103",
+                        "username": "KaDaWa",
+                        "imgUrl": "https://robohash.org/KaDaWa"
+                    },
+                    {
+                        "_id": "u101",
+                        "username": "onchu",
+                        "imgUrl": "https://robohash.org/onchu"
+                    }
+                ]
+            }
+        ],
+        "likes": [
+            {
+                "_id": "u102",
+                "username": "ronchi",
+                "fullname": "Ron Buchris",
+                "imgUrl": "https://robohash.org/ronchi"
+            }
+        ]
+    }
+]

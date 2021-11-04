@@ -1,0 +1,36 @@
+[
+    {
+        "_id": "u101",
+        "email": "onchetrit@example.com",
+        "password": "123",
+        "createdAt": 1635858028,
+        "username": "onchu",
+        "fullname": "On Chetrit",
+        "bio": "hello world",
+        "imgUrl": "https://robohash.org/onchu",
+        "isPrivate": false,
+        "following": [
+            {
+                "_id": "u102",
+                "username": "ronchi",
+                "imgUrl": "https://robohash.org/ronchi"
+            },
+            {
+                "_id": "u103",
+                "username": "KaDaWa",
+                "imgUrl": "https://robohash.org/KaDaWa"
+            }
+        ],
+        "followers": [
+            {
+                "_id": "u102",
+                "username": "ronchi",
+                "imgUrl": "https://robohash.org/ronchi"
+            }
+        ],
+        "posts": [
+            "post1",
+            "post2"
+        ]
+    }
+]
