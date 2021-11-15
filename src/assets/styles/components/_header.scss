@@ -1,0 +1,13 @@
+header {
+  margin: 0 auto;
+  width: 975px;
+
+  .nav-btns {
+    gap: 22px;
+
+    .profile {
+      border-radius: 50%;
+      width: 22px;
+    }
+  }
+}

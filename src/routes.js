@@ -1,7 +1,7 @@
 import { HomePage } from './js/pages/HomePage'
-import { UserDetails } from './js/pages/UserDetails'
+import { UserProfile } from './js/pages/UserProfile'
 import { PostDetails } from './js/pages/PostDetails'
-import { Login } from './js/pages/Login'
+
 
 const routes = [
     {
@@ -10,11 +10,7 @@ const routes = [
     },
     {
         path: '/:username',
-        component: UserDetails,
-    },
-    {
-        path: '/login',
-        component: Login,
+        component: UserProfile,
     },
     {
         path: '/',
@@ -23,3 +19,9 @@ const routes = [
 ]
 
 export default routes;
+
+// function mapStateToProps(state) {
+//     return {
+//       user: state.userModule.user,
+//     };
+//   }
