@@ -174,7 +174,7 @@ const postDB = [
             lng: 22.22,
             name: "Tel Aviv"
         },
-        imgs: [
+        uploads: [
             "https://picsum.photos/1080/1080"
         ],
         comments: [
@@ -223,7 +223,7 @@ const postDB = [
             lng: 22.22,
             name: "Tel Aviv"
         },
-        imgs: [
+        uploads: [
             "https://picsum.photos/1080/1080"
         ],
         comments: [
@@ -272,7 +272,55 @@ const postDB = [
             lng: 22.22,
             name: "Tel Aviv"
         },
-        imgs: [
+        uploads: [
+            "https://picsum.photos/1080/1080"
+        ],
+        comments: [
+            {
+                _id: "c101",
+                createdBy: {
+                    _id: "u102",
+                    username: "ronchi",
+                    imgUrl: "https://robohash.org/ronchi"
+                },
+                txt: "first comment",
+                likedBy: [
+                    {
+                        _id: "u103",
+                        username: "KaDaWa",
+                        imgUrl: "https://robohash.org/KaDaWa"
+                    },
+                    {
+                        _id: "u101",
+                        username: "onchu",
+                        imgUrl: "https://robohash.org/onchu"
+                    }
+                ]
+            }
+        ],
+        likes: [
+            {
+                _id: "u102",
+                username: "ronchi",
+                fullname: "Ron Buchris",
+                imgUrl: "https://robohash.org/ronchi"
+            }
+        ]
+    }, {
+        _id: "p104",
+        txt: "KaDaWa second post",
+        createdAt: 1636898345,
+        createdBy: {
+            _id: "u103",
+            username: "KaDaWa",
+            imgUrl: "https://robohash.org/KaDaWa"
+        },
+        loc: {
+            lat: 11.11,
+            lng: 22.22,
+            name: "Tel Aviv"
+        },
+        uploads: [
             "https://picsum.photos/1080/1080"
         ],
         comments: [

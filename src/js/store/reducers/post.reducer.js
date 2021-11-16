@@ -1,10 +1,9 @@
-import { userService } from '../../services/user.service.js'
-
-
 const initialState = {
     post: null,
     posts: [],
+    stories: []
 }
+
 export function postReducer(state = initialState, action) {
     var newState = state;
     switch (action.type) {

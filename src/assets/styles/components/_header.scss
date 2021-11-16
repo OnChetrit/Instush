@@ -1,13 +1,18 @@
 header {
   margin: 0 auto;
-  width: 975px;
+  max-width: 975px;
+  height: 54px;
 
   .nav-btns {
     gap: 22px;
 
+    img {
+      width: 22px;
+    }
+
     .profile {
       border-radius: 50%;
-      width: 22px;
+      height: 22px;
     }
   }
 }

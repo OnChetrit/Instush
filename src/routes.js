@@ -2,7 +2,6 @@ import { HomePage } from './js/pages/HomePage'
 import { UserProfile } from './js/pages/UserProfile'
 import { PostDetails } from './js/pages/PostDetails'
 
-
 const routes = [
     {
         path: '/post/:postId',
@@ -19,9 +18,3 @@ const routes = [
 ]
 
 export default routes;
-
-// function mapStateToProps(state) {
-//     return {
-//       user: state.userModule.user,
-//     };
-//   }
