@@ -1,18 +1,26 @@
 header {
-  margin: 0 auto;
-  max-width: 975px;
+  position: sticky;
+  top: 0;
   height: 54px;
+  background-color: $clr5;
+  border-bottom: 1px solid $clr3;
 
-  .nav-btns {
-    gap: 22px;
+  .container {
+    margin: 0 auto;
+    max-width: 975px;
+    height: 100%;
 
-    img {
-      width: 22px;
-    }
+    .nav-btns {
+      gap: 22px;
 
-    .profile {
-      border-radius: 50%;
-      height: 22px;
+      img {
+        width: 22px;
+      }
+
+      .profile {
+        border-radius: 50%;
+        height: 22px;
+      }
     }
   }
 }

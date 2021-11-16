@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { PostList } from '../cmps/home/PostList';
-import { Stories } from '../cmps/Stories';
+import { Stories } from '../cmps/home/Stories';
 import { loadPosts } from '../store/actions/post.actions';
 
 export const HomePage = () => {

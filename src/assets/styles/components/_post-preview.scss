@@ -1,0 +1,46 @@
+.post-preview {
+  max-width: 600px;
+  font-size: rem(14px);
+  background-color: $clr5;
+  border: 1px solid $clr3;
+  margin: 0 auto 25px;
+
+  .post-header {
+    padding: 14px 16px;
+
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+    .username-post {
+      font-weight: bold;
+    }
+  }
+
+  .post-uploads {
+  }
+
+  .post-activities {
+    height: 54px;
+    padding: 6px 16px;
+    .action {
+      padding: 8px;
+
+      &:hover {
+        svg {
+          path {
+            fill: $clr2;
+          }
+        }
+      }
+      svg {
+        color: $clr1;
+        width: 24px;
+      }
+    }
+  }
+
+  .post-comments {
+  }
+}

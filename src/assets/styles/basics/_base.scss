@@ -3,15 +3,13 @@
 }
 
 html {
-  font-family: roboto, sans-serif;
-  line-height: 1.75;
+  font-family: 'Segoe UI';
 }
 
 body {
   margin: 0;
-  background-color: #fff;
-  color: $primary-text-color;
-  font-size: 16px;
+  background-color: $clr4;
+  color: $clr1;
   height: 100vh;
 }
 
