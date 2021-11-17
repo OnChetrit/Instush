@@ -1,7 +1,7 @@
 .post-preview {
   max-width: 600px;
   font-size: rem(14px);
-  background-color: $clr5;
+  background-color: $clr6;
   border: 1px solid $clr3;
   margin: 0 auto 25px;
 
@@ -35,9 +35,7 @@
 
       &:hover {
         svg {
-          path {
-            fill: $clr2;
-          }
+          fill: $clr2;
         }
       }
 
@@ -75,5 +73,9 @@
       font-size: rem(10px);
       margin-bottom: 16px;
     }
+  }
+
+  .post-add-comment {
+    border-top: 1px solid $clr5;
   }
 }
