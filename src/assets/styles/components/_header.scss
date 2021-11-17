@@ -5,16 +5,45 @@ header {
   background-color: $clr6;
   border-bottom: 1px solid $clr3;
 
-  .nav-btns {
-    gap: 22px;
+  .header-div {
+    padding: 0 20px;
 
-    img {
-      width: 22px;
+    .logo {
+      font-family: grandista;
+      font-weight: 300;
+      font-size: rem(24px);
+      flex: 1;
     }
 
-    .profile {
-      border-radius: 50%;
+    .search-bar {
+      min-width: 125px;
+      width: 215px;
+      height: 28px;
+
+      input {
+        color: $clr2;
+        padding: 3px 12px;
+        border: 1px solid $clr3;
+        border-radius: 3px;
+        background-color: $clr4;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .nav-btns {
+      gap: 22px;
+      flex: 1;
       height: 22px;
+
+      img {
+        width: 22px;
+      }
+
+      .profile {
+        border-radius: 50%;
+        height: 22px;
+      }
     }
   }
 }

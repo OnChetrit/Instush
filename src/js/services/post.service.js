@@ -8,19 +8,25 @@ export const postService = {
     addComment
 }
 
-async function query(user) {
+async function query(user, username = false) {
     // return httpService.get(`user`)
     const posts = await storageService.query(STORAGE_KEY)
-    return posts.filter(post => {
-        return user.following.some(follower => follower.username === post.createdBy.username)
-    })
+    if (username) {
+        return posts.filter(post => {
+            return post.createdBy.username === username
+        })
+    } else {
+        return posts.filter(post => {
+            return user.following.some(follower => follower.username === post.createdBy.username)
+        })
+    }
 }
-async function addLike(post,user) {
-   const userLiked = post.likes.find(likeBy => likeBy.username === user.username)
+async function addLike(post, user) {
+    const userLiked = post.likes.find(likeBy => likeBy.username === user.username)
     if (userLiked) {
         post.likes.splice(post.likes.indexOf(userLiked), 1)
     } else {
-        const {_id, username, fullname, imgUrl} = user
+        const { _id, username, fullname, imgUrl } = user
         const userToAdd = {
             _id,
             username,
@@ -31,13 +37,13 @@ async function addLike(post,user) {
     }
     return await storageService.put(STORAGE_KEY, post)
 }
-async function addComment(post,user,txt) {
-    const comment = _createComment(user,txt)
+async function addComment(post, user, txt) {
+    const comment = _createComment(user, txt)
     post.comments.push(comment)
     return await storageService.put(STORAGE_KEY, post)
 }
 
-function _createComment(user,txt) {
+function _createComment(user, txt) {
     return {
         _id: _makeId(),
         createdAt: Date.now(),

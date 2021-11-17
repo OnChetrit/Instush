@@ -1,11 +1,27 @@
 .user-profile {
+  padding: 30px 20px 0;
   .user-details {
     img {
+      border-radius: 50%;
       height: 150px;
       width: 150px;
     }
 
     .details {
+      .header-details {
+        h2 {
+          font-weight: 300;
+        }
+      }
+      .follow-details {
+        .follow-container {
+          gap: 40px;
+
+          span {
+            margin-right: 4px;
+          }
+        }
+      }
     }
   }
 }

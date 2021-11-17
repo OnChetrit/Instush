@@ -18,8 +18,8 @@ export const PostPreview = ({ post }) => {
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
-    dispatch(addComment(post,user,comment));
-    setComment('')
+    dispatch(addComment(post, user, comment));
+    setComment('');
   };
 
   const likedPost = () => {

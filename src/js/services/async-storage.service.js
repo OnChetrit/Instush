@@ -94,7 +94,7 @@ const userDB = [
                 imgUrl: "https://robohash.org/ronchi"
             }
         ],
-        posts: [
+        postsIds: [
             'p101'
         ]
     },
@@ -127,7 +127,7 @@ const userDB = [
                 imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.6435-1/s200x200/45913258_739298549766940_6051018177377206272_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=kuHUGJHLm30AX-aCEzv&_nc_ht=scontent.fsdv3-1.fna&oh=e25dd49915bf5178de75d6bcfb0b7122&oe=61BB2D0B"
             }
         ],
-        postsIds: []
+        postsIds: ['p103']
     },
     {
         _id: "u103",
@@ -158,7 +158,7 @@ const userDB = [
                 imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t31.18172-1/p200x200/28701103_10215787180259649_3807430208929437705_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=tBxmiY55_DsAX8KPgf5&_nc_ht=scontent.fsdv3-1.fna&oh=6bc7e451bb1a011ac2852447529bdb85&oe=61BADE35"
             }
         ],
-        posts: [
+        postsIds: [
             "p102"
         ]
     }
