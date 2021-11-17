@@ -12,3 +12,14 @@ export const loadPosts = (user) => {
         }
     }
 }
+export const addLike = (post,user) => {
+    return async dispatch => {
+        try {
+            const returnedPost= await postService.addLike(post,user)
+            dispatch({ type: 'UPDATE_POST', post: returnedPost })
+        }
+        catch (err) {
+            console.log(`err`, err)
+        }
+    }
+}

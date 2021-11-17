@@ -10,7 +10,6 @@ export const UserProfile = () => {
     const user = await getUserByUsername(params.username);
     setUser(user)
   }, {});
-  console.log(user);
   if(!user) return <div>loading</div>
   return <div className="user-profile">
     <div className="user-details">

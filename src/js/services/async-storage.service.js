@@ -36,7 +36,9 @@ async function post(entityType, newEntity) {
 }
 
 async function put(entityType, updatedEntity) {
-    const entities = query(entityType)
+    console.log(updatedEntity);
+    const entities = await query(entityType)
+    console.log(entities);
     const idx = entities.findIndex(entity => entity._id === updatedEntity._id)
     entities.splice(idx, 1, updatedEntity)
     _save(entityType, entities)
@@ -369,5 +371,5 @@ const postDB = [
     }
 ]
 
-_save('user', userDB)
-_save('post', postDB)
+// _save('user', userDB)
+// _save('post', postDB)

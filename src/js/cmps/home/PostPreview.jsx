@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import ReactTimeAgo from 'react-time-ago';
 
 import { ReactComponent as Liked } from '../../../assets/img/action/liked.svg';
@@ -9,10 +9,12 @@ import { ReactComponent as Comment } from '../../../assets/img/action/comment.sv
 import { ReactComponent as Share } from '../../../assets/img/action/share.svg';
 import { ReactComponent as Save } from '../../../assets/img/action/save.svg';
 import { ReactComponent as Emoji } from '../../../assets/img/action/emoji.svg';
+import { addLike } from '../../store/actions/post.actions';
 
 export const PostPreview = ({ post }) => {
   const [comment, setComment] = useState('');
   const { user } = useSelector((state) => state.userModule);
+  const dispatch = useDispatch();
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
@@ -22,8 +24,6 @@ export const PostPreview = ({ post }) => {
   const likedPost = () => {
     return post.likes.some((like) => like.username === user.username);
   };
-
-  console.log(`likedPost()`, likedPost());
 
   return (
     <div className="post-preview flex column">
@@ -41,7 +41,12 @@ export const PostPreview = ({ post }) => {
       </div>
       <div className="post-activities flex space-between">
         <div className="left">
-          <button className="action">
+          <button
+            className="action"
+            onClick={() => {
+              dispatch(addLike(post, user));
+            }}
+          >
             {likedPost() ? <Liked /> : <Like />}
           </button>
           <button className="action">
