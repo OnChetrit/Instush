@@ -43,3 +43,12 @@ button {
   cursor: pointer;
   padding: 0;
 }
+
+textarea,
+input {
+  outline: none;
+  border: none;
+  resize: none;
+  max-height: 80px;
+  font-family: 'Segoe UI';
+}

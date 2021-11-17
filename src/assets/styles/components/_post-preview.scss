@@ -13,8 +13,13 @@
       height: 32px;
       border-radius: 50%;
     }
-    .username-post {
-      font-weight: bold;
+
+    .post-info {
+      margin-left: 14px;
+
+      .username-post {
+        font-weight: bold;
+      }
     }
   }
 
@@ -23,7 +28,8 @@
 
   .post-activities {
     height: 54px;
-    padding: 6px 16px;
+    padding: 6px 8px 6px 16px;
+
     .action {
       padding: 8px;
 
@@ -34,6 +40,7 @@
           }
         }
       }
+
       svg {
         color: $clr1;
         width: 24px;
@@ -41,6 +48,32 @@
     }
   }
 
-  .post-comments {
+  .post-bottom {
+    padding: 0 16px;
+
+    .likes {
+      margin-bottom: 7px;
+    }
+
+    .comments {
+      margin-bottom: 10px;
+
+      .user-txt {
+        span {
+          margin-right: 5px;
+        }
+      }
+
+      .view-all {
+        color: $clr2;
+      }
+    }
+
+    .post-time {
+      color: $clr2;
+      text-transform: uppercase;
+      font-size: rem(10px);
+      margin-bottom: 16px;
+    }
   }
 }
