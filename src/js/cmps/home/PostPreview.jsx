@@ -8,7 +8,7 @@ import { ReactComponent as Save } from '../../../assets/img/action/save.svg';
 import { ReactComponent as Emoji } from '../../../assets/img/action/emoji.svg';
 
 export const PostPreview = ({ post }) => {
-  const [username, setUserName] = useState();
+  const [comment, setComment] = useState();
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
