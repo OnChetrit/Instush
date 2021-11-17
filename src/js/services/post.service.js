@@ -4,7 +4,8 @@ const STORAGE_KEY = 'post'
 
 export const postService = {
     query,
-    addLike
+    addLike,
+    addComment
 }
 
 async function query(user) {
@@ -29,4 +30,32 @@ async function addLike(post,user) {
         post.likes.push(userToAdd)
     }
     return await storageService.put(STORAGE_KEY, post)
+}
+async function addComment(post,user,txt) {
+    const comment = _createComment(user,txt)
+    post.comments.push(comment)
+    return await storageService.put(STORAGE_KEY, post)
+}
+
+function _createComment(user,txt) {
+    return {
+        _id: _makeId(),
+        createdBy: {
+            _id: user._id,
+            username: user.username,
+            imgUrl: user.imgUrl,
+        },
+        txt,
+        likedBy: []
+    }
+}
+
+
+export function _makeId(length = 5) {
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    for (var i = 0; i < length; i++) {
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    return text;
 }
