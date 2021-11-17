@@ -19,6 +19,7 @@ export const PostPreview = ({ post }) => {
   const handleSubmit = (ev) => {
     ev.preventDefault();
     dispatch(addComment(post,user,comment));
+    setComment('')
   };
 
   const likedPost = () => {
@@ -83,6 +84,7 @@ export const PostPreview = ({ post }) => {
           <textarea
             type="text"
             placeholder="Add a comment..."
+            value={comment}
             onChange={(ev) => setComment(ev.target.value)}
           />
           <button type="submit">Post</button>
