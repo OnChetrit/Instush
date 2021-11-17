@@ -256,10 +256,10 @@ const postDB = [
         ],
         likes: [
             {
-                _id: "u102",
-                username: "ronchi",
-                fullname: "Ron Buchris",
-                imgUrl: "https://robohash.org/ronchi"
+                _id: "u101",
+                username: "onchu",
+                fullname: "On Chetrit",
+                imgUrl: "https://robohash.org/onchu"
             }
         ]
     },
@@ -309,6 +309,12 @@ const postDB = [
                 username: "ronchi",
                 fullname: "Ron Buchris",
                 imgUrl: "https://robohash.org/ronchi"
+            },
+            {
+                _id: "u101",
+                username: "onchu",
+                fullname: "On Chetrit",
+                imgUrl: "https://robohash.org/onchu"
             }
         ]
     },
