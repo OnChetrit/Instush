@@ -15,7 +15,6 @@ export const PostPreview = ({post }) => {
   const dispatch = useDispatch();
   const handleSubmit = (ev) => {
     ev.preventDefault();
-    // dispatch(loginUser({ username, password }));
   };
 
   return (
