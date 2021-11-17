@@ -1,6 +1,5 @@
-import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { Link, useHistory } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { ReactComponent as Home } from '../../assets/img/nav/home.svg';
 import { ReactComponent as Direct } from '../../assets/img/nav/direct.svg';
 import { ReactComponent as Add } from '../../assets/img/nav/add.svg';
@@ -14,16 +13,7 @@ import { Search } from './Search';
 
 export const Header = () => {
   const { user } = useSelector((state) => state.userModule);
-
-  const [pathname, setPathname] = useState('');
-
-  const history = useHistory();
-
-  useEffect(() => {
-    console.log('hi');
-    const { pathname } = history.location;
-    setPathname(pathname);
-  }, [history.location.pathname]);
+  const { pathname } = useSelector((state) => state.postModule);
 
   return (
     <header>

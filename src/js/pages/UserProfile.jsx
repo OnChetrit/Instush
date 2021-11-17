@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 
@@ -13,15 +13,17 @@ import { ProfilePostPreview } from '../cmps/profile/ProfilePostPreview';
 export const UserProfile = () => {
   const { user } = useSelector((state) => state.userModule);
   const { posts } = useSelector((state) => state.postModule);
-
+  const history = useHistory();
   const params = useParams();
   const [profile, setProfile] = useState(null);
   const dispatch = useDispatch();
 
   useEffect(async () => {
+    const { pathname } = history.location;
+    dispatch({ type: 'SET_PATHNAME', pathname })
     const userProfile = await getUserByUsername(params.username);
     setProfile(userProfile);
-  }, {});
+  }, []);
 
   useEffect(() => {
     dispatch(loadPosts(user, params.username));

@@ -1,7 +1,8 @@
 const initialState = {
     post: null,
     posts: [],
-    stories: []
+    stories: [],
+    pathname: null,
 }
 
 export function postReducer(state = initialState, action) {
@@ -12,6 +13,9 @@ export function postReducer(state = initialState, action) {
             break;
         case 'SET_POSTS':
             newState = { ...state, posts: action.posts }
+            break;
+        case 'SET_PATHNAME':
+            newState = {...state, pathname: action.pathname}
             break;
         case 'UPDATE_POST':
             return {
