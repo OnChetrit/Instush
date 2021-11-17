@@ -4,7 +4,8 @@ export const storageService = {
     post,
     put,
     remove,
-    _save
+    _save,
+    getByName
 }
 
 function query(entityType, delay = 400) {
@@ -19,7 +20,11 @@ function query(entityType, delay = 400) {
 
 async function get(entityType, entityId) {
     const entities = await query(entityType)
-    entities.find(entity => entity._id === entityId)
+    return entities.find(entity => entity._id === entityId)
+}
+async function getByName(entityType, entityUsername) {
+    const entities = await query(entityType)
+    return entities.find(entity => entity.username === entityUsername)
 }
 
 async function post(entityType, newEntity) {

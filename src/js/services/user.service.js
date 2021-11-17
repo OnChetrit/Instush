@@ -10,7 +10,8 @@ export const userService = {
     getById,
     remove,
     update,
-    save
+    save,
+    getUserByUsername
 }
 
 window.userService = userService
@@ -20,6 +21,9 @@ function query() {
     return storageService.query(STORAGE_KEY)
 }
 
+async function getUserByUsername(username) {
+    return await storageService.getByName(STORAGE_KEY,username);
+}
 
 async function getById(userId) {
     const user = await storageService.get(STORAGE_KEY, userId)

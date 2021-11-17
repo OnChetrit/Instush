@@ -12,3 +12,7 @@ export const loginUser = (credentials) => {
         }
     }
 }
+
+export const getUserByUsername = (username) => {
+    return userService.getUserByUsername(username);
+}

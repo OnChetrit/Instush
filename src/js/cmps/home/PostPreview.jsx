@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ReactTimeAgo from 'react-time-ago';
 
 import { ReactComponent as Like } from '../../../assets/img/action/like.svg';
@@ -20,7 +21,9 @@ export const PostPreview = ({ post }) => {
       <div className="post-header flex">
         <img src={post.createdBy.imgUrl} alt="user profile" />
         <div className="post-info">
-          <div className="username-post">{post.createdBy.username}</div>
+          <Link to={`/${post.createdBy.username}`}>
+            <div className="username-post">{post.createdBy.username}</div>
+          </Link>
           <div className="location-post">{post.loc.name}</div>
         </div>
       </div>
