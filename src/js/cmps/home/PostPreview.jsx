@@ -78,7 +78,7 @@ export const PostPreview = ({ post }) => {
         </div>
       </div>
       <div className="post-add-comment">
-        <form submit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <Emoji />
           <textarea
             type="text"

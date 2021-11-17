@@ -36,9 +36,7 @@ async function post(entityType, newEntity) {
 }
 
 async function put(entityType, updatedEntity) {
-    console.log(updatedEntity);
     const entities = await query(entityType)
-    console.log(entities);
     const idx = entities.findIndex(entity => entity._id === updatedEntity._id)
     entities.splice(idx, 1, updatedEntity)
     _save(entityType, entities)
@@ -75,7 +73,7 @@ const userDB = [
         username: "onchu",
         fullname: "On Chetrit",
         bio: "hello world",
-        imgUrl: "https://robohash.org/onchu",
+        imgUrl: "https://scontent.ftlv6-1.fna.fbcdn.net/v/t39.30808-6/213419480_10219845179382101_5652771782289347205_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5KM7Pqj_hZcAX8gflDe&_nc_ht=scontent.ftlv6-1.fna&oh=5539731c0cbf309b0a0846908a8d7c00&oe=619AE643",
         isPrivate: false,
         following: [
             {
@@ -114,7 +112,7 @@ const userDB = [
             {
                 _id: "u101",
                 username: "onchu",
-                imgUrl: "https://robohash.org/onchu"
+                imgUrl: "https://scontent.ftlv6-1.fna.fbcdn.net/v/t39.30808-6/213419480_10219845179382101_5652771782289347205_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5KM7Pqj_hZcAX8gflDe&_nc_ht=scontent.ftlv6-1.fna&oh=5539731c0cbf309b0a0846908a8d7c00&oe=619AE643"
             },
             {
                 _id: "u103",
@@ -145,7 +143,7 @@ const userDB = [
             {
                 _id: "u101",
                 username: "onchu",
-                imgUrl: "https://robohash.org/onchu"
+                imgUrl: "https://scontent.ftlv6-1.fna.fbcdn.net/v/t39.30808-6/213419480_10219845179382101_5652771782289347205_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5KM7Pqj_hZcAX8gflDe&_nc_ht=scontent.ftlv6-1.fna&oh=5539731c0cbf309b0a0846908a8d7c00&oe=619AE643"
             },
             {
                 _id: "u102",
@@ -174,7 +172,7 @@ const postDB = [
         createdBy: {
             _id: "u101",
             username: "onchu",
-            imgUrl: "https://robohash.org/onchu"
+            imgUrl: "https://scontent.ftlv6-1.fna.fbcdn.net/v/t39.30808-6/213419480_10219845179382101_5652771782289347205_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5KM7Pqj_hZcAX8gflDe&_nc_ht=scontent.ftlv6-1.fna&oh=5539731c0cbf309b0a0846908a8d7c00&oe=619AE643"
         },
         loc: {
             lat: 11.11,
@@ -202,7 +200,7 @@ const postDB = [
                     {
                         _id: "u101",
                         username: "onchu",
-                        imgUrl: "https://robohash.org/onchu"
+                        imgUrl: "https://scontent.ftlv6-1.fna.fbcdn.net/v/t39.30808-6/213419480_10219845179382101_5652771782289347205_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5KM7Pqj_hZcAX8gflDe&_nc_ht=scontent.ftlv6-1.fna&oh=5539731c0cbf309b0a0846908a8d7c00&oe=619AE643"
                     }
                 ]
             }
@@ -251,7 +249,7 @@ const postDB = [
                     {
                         _id: "u101",
                         username: "onchu",
-                        imgUrl: "https://robohash.org/onchu"
+                        imgUrl: "https://scontent.ftlv6-1.fna.fbcdn.net/v/t39.30808-6/213419480_10219845179382101_5652771782289347205_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5KM7Pqj_hZcAX8gflDe&_nc_ht=scontent.ftlv6-1.fna&oh=5539731c0cbf309b0a0846908a8d7c00&oe=619AE643"
                     }
                 ]
             }
@@ -261,7 +259,7 @@ const postDB = [
                 _id: "u101",
                 username: "onchu",
                 fullname: "On Chetrit",
-                imgUrl: "https://robohash.org/onchu"
+                imgUrl: "https://scontent.ftlv6-1.fna.fbcdn.net/v/t39.30808-6/213419480_10219845179382101_5652771782289347205_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5KM7Pqj_hZcAX8gflDe&_nc_ht=scontent.ftlv6-1.fna&oh=5539731c0cbf309b0a0846908a8d7c00&oe=619AE643"
             }
         ]
     },
@@ -300,7 +298,7 @@ const postDB = [
                     {
                         _id: "u101",
                         username: "onchu",
-                        imgUrl: "https://robohash.org/onchu"
+                        imgUrl: "https://scontent.ftlv6-1.fna.fbcdn.net/v/t39.30808-6/213419480_10219845179382101_5652771782289347205_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5KM7Pqj_hZcAX8gflDe&_nc_ht=scontent.ftlv6-1.fna&oh=5539731c0cbf309b0a0846908a8d7c00&oe=619AE643"
                     }
                 ]
             }
@@ -316,7 +314,7 @@ const postDB = [
                 _id: "u101",
                 username: "onchu",
                 fullname: "On Chetrit",
-                imgUrl: "https://robohash.org/onchu"
+                imgUrl: "https://scontent.ftlv6-1.fna.fbcdn.net/v/t39.30808-6/213419480_10219845179382101_5652771782289347205_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5KM7Pqj_hZcAX8gflDe&_nc_ht=scontent.ftlv6-1.fna&oh=5539731c0cbf309b0a0846908a8d7c00&oe=619AE643"
             }
         ]
     },
@@ -355,7 +353,7 @@ const postDB = [
                     {
                         _id: "u101",
                         username: "onchu",
-                        imgUrl: "https://robohash.org/onchu"
+                        imgUrl: "https://scontent.ftlv6-1.fna.fbcdn.net/v/t39.30808-6/213419480_10219845179382101_5652771782289347205_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=5KM7Pqj_hZcAX8gflDe&_nc_ht=scontent.ftlv6-1.fna&oh=5539731c0cbf309b0a0846908a8d7c00&oe=619AE643"
                     }
                 ]
             }
@@ -371,5 +369,5 @@ const postDB = [
     }
 ]
 
-// _save('user', userDB)
-// _save('post', postDB)
+_save('user', userDB)
+_save('post', postDB)

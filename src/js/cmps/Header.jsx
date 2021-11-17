@@ -12,7 +12,7 @@ export const Header = () => {
 
   return (
     <header>
-      <div className="container flex space-between">
+      <div className="main-container flex space-between align-center">
         <div className="logo">Logo</div>
         <div className="search-bar">
           <Search />
@@ -25,7 +25,9 @@ export const Header = () => {
           <Add />
           <Explore />
           <Activity />
-          <img className="profile" src={user.imgUrl} alt="" />
+          <Link to={`/${user.username}`}>
+            <img className="profile" src={user.imgUrl} alt="user-profile" />
+          </Link>
         </div>
       </div>
     </header>
