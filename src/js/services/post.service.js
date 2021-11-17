@@ -40,6 +40,7 @@ async function addComment(post,user,txt) {
 function _createComment(user,txt) {
     return {
         _id: _makeId(),
+        createdAt: Date.now(),
         createdBy: {
             _id: user._id,
             username: user.username,
