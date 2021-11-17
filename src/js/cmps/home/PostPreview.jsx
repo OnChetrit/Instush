@@ -9,7 +9,7 @@ import { ReactComponent as Comment } from '../../../assets/img/action/comment.sv
 import { ReactComponent as Share } from '../../../assets/img/action/share.svg';
 import { ReactComponent as Save } from '../../../assets/img/action/save.svg';
 import { ReactComponent as Emoji } from '../../../assets/img/action/emoji.svg';
-import { addLike } from '../../store/actions/post.actions';
+import { addComment, addLike } from '../../store/actions/post.actions';
 
 export const PostPreview = ({ post }) => {
   const [comment, setComment] = useState('');
@@ -18,7 +18,8 @@ export const PostPreview = ({ post }) => {
 
   const handleSubmit = (ev) => {
     ev.preventDefault();
-    // addComment(comment);
+    dispatch(addComment(post,user,comment));
+    setComment('')
   };
 
   const likedPost = () => {
@@ -83,6 +84,7 @@ export const PostPreview = ({ post }) => {
           <textarea
             type="text"
             placeholder="Add a comment..."
+            value={comment}
             onChange={(ev) => setComment(ev.target.value)}
           />
           <button type="submit">Post</button>
