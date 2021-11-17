@@ -13,7 +13,6 @@ export const HomePage = () => {
   useEffect(() => {
     dispatch(loadPosts(user));
   }, []);
-
   return (
     <div className="home">
       <Stories />

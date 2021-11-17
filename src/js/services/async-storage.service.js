@@ -84,7 +84,7 @@ const userDB = [
             {
                 _id: "u103",
                 username: "KaDaWa",
-                imgUrl: "https://robohash.org/KaDaWa"
+                imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.6435-1/s200x200/45913258_739298549766940_6051018177377206272_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=kuHUGJHLm30AX-aCEzv&_nc_ht=scontent.fsdv3-1.fna&oh=e25dd49915bf5178de75d6bcfb0b7122&oe=61BB2D0B"
             }
         ],
         followers: [
@@ -106,7 +106,7 @@ const userDB = [
         username: "ronchi",
         fullname: "Ron Buchris",
         bio: "hello world",
-        imgUrl: "https://robohash.org/ronchi",
+        imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t31.18172-1/p200x200/28701103_10215787180259649_3807430208929437705_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=tBxmiY55_DsAX8KPgf5&_nc_ht=scontent.fsdv3-1.fna&oh=6bc7e451bb1a011ac2852447529bdb85&oe=61BADE35",
         isPrivate: false,
         following: [
             {
@@ -117,14 +117,14 @@ const userDB = [
             {
                 _id: "u103",
                 username: "KaDaWa",
-                imgUrl: "https://robohash.org/KaDaWa"
+                imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.6435-1/s200x200/45913258_739298549766940_6051018177377206272_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=kuHUGJHLm30AX-aCEzv&_nc_ht=scontent.fsdv3-1.fna&oh=e25dd49915bf5178de75d6bcfb0b7122&oe=61BB2D0B"
             }
         ],
         followers: [
             {
                 _id: "u103",
                 username: "KaDaWa",
-                imgUrl: "https://robohash.org/KaDaWa"
+                imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.6435-1/s200x200/45913258_739298549766940_6051018177377206272_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=kuHUGJHLm30AX-aCEzv&_nc_ht=scontent.fsdv3-1.fna&oh=e25dd49915bf5178de75d6bcfb0b7122&oe=61BB2D0B"
             }
         ],
         postsIds: []
@@ -137,7 +137,7 @@ const userDB = [
         username: "KaDaWa",
         fullname: "Adir Cohen",
         bio: "hello world",
-        imgUrl: "https://robohash.org/KaDaWa",
+        imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.6435-1/s200x200/45913258_739298549766940_6051018177377206272_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=kuHUGJHLm30AX-aCEzv&_nc_ht=scontent.fsdv3-1.fna&oh=e25dd49915bf5178de75d6bcfb0b7122&oe=61BB2D0B",
         isPrivate: false,
         following: [
             {
@@ -148,14 +148,14 @@ const userDB = [
             {
                 _id: "u102",
                 username: "ronchi",
-                imgUrl: "https://robohash.org/ronchi"
+                imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t31.18172-1/p200x200/28701103_10215787180259649_3807430208929437705_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=tBxmiY55_DsAX8KPgf5&_nc_ht=scontent.fsdv3-1.fna&oh=6bc7e451bb1a011ac2852447529bdb85&oe=61BADE35"
             }
         ],
         followers: [
             {
                 _id: "u102",
                 username: "ronchi",
-                imgUrl: "https://robohash.org/ronchi"
+                imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t31.18172-1/p200x200/28701103_10215787180259649_3807430208929437705_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=tBxmiY55_DsAX8KPgf5&_nc_ht=scontent.fsdv3-1.fna&oh=6bc7e451bb1a011ac2852447529bdb85&oe=61BADE35"
             }
         ],
         posts: [
@@ -189,14 +189,14 @@ const postDB = [
                 createdBy: {
                     _id: "u102",
                     username: "ronchi",
-                    imgUrl: "https://robohash.org/ronchi"
+                    imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t31.18172-1/p200x200/28701103_10215787180259649_3807430208929437705_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=tBxmiY55_DsAX8KPgf5&_nc_ht=scontent.fsdv3-1.fna&oh=6bc7e451bb1a011ac2852447529bdb85&oe=61BADE35"
                 },
                 txt: "first comment",
                 likedBy: [
                     {
                         _id: "u103",
                         username: "KaDaWa",
-                        imgUrl: "https://robohash.org/KaDaWa"
+                        imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.6435-1/s200x200/45913258_739298549766940_6051018177377206272_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=kuHUGJHLm30AX-aCEzv&_nc_ht=scontent.fsdv3-1.fna&oh=e25dd49915bf5178de75d6bcfb0b7122&oe=61BB2D0B"
                     },
                     {
                         _id: "u101",
@@ -211,7 +211,7 @@ const postDB = [
                 _id: "u102",
                 username: "ronchi",
                 fullname: "Ron Buchris",
-                imgUrl: "https://robohash.org/ronchi"
+                imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t31.18172-1/p200x200/28701103_10215787180259649_3807430208929437705_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=tBxmiY55_DsAX8KPgf5&_nc_ht=scontent.fsdv3-1.fna&oh=6bc7e451bb1a011ac2852447529bdb85&oe=61BADE35"
             }
         ]
     },
@@ -222,7 +222,7 @@ const postDB = [
         createdBy: {
             _id: "u102",
             username: "ronchi",
-            imgUrl: "https://robohash.org/ronchi"
+            imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t31.18172-1/p200x200/28701103_10215787180259649_3807430208929437705_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=tBxmiY55_DsAX8KPgf5&_nc_ht=scontent.fsdv3-1.fna&oh=6bc7e451bb1a011ac2852447529bdb85&oe=61BADE35"
         },
         loc: {
             lat: 11.11,
@@ -239,14 +239,14 @@ const postDB = [
                 createdBy: {
                     _id: "u102",
                     username: "ronchi",
-                    imgUrl: "https://robohash.org/ronchi"
+                    imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t31.18172-1/p200x200/28701103_10215787180259649_3807430208929437705_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=tBxmiY55_DsAX8KPgf5&_nc_ht=scontent.fsdv3-1.fna&oh=6bc7e451bb1a011ac2852447529bdb85&oe=61BADE35"
                 },
                 txt: "My Post",
                 likedBy: [
                     {
                         _id: "u103",
                         username: "KaDaWa",
-                        imgUrl: "https://robohash.org/KaDaWa"
+                        imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.6435-1/s200x200/45913258_739298549766940_6051018177377206272_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=kuHUGJHLm30AX-aCEzv&_nc_ht=scontent.fsdv3-1.fna&oh=e25dd49915bf5178de75d6bcfb0b7122&oe=61BB2D0B"
                     },
                     {
                         _id: "u101",
@@ -272,7 +272,7 @@ const postDB = [
         createdBy: {
             _id: "u103",
             username: "KaDaWa",
-            imgUrl: "https://robohash.org/KaDaWa"
+            imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.6435-1/s200x200/45913258_739298549766940_6051018177377206272_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=kuHUGJHLm30AX-aCEzv&_nc_ht=scontent.fsdv3-1.fna&oh=e25dd49915bf5178de75d6bcfb0b7122&oe=61BB2D0B"
         },
         loc: {
             lat: 11.11,
@@ -289,14 +289,14 @@ const postDB = [
                 createdBy: {
                     _id: "u102",
                     username: "ronchi",
-                    imgUrl: "https://robohash.org/ronchi"
+                    imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t31.18172-1/p200x200/28701103_10215787180259649_3807430208929437705_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=tBxmiY55_DsAX8KPgf5&_nc_ht=scontent.fsdv3-1.fna&oh=6bc7e451bb1a011ac2852447529bdb85&oe=61BADE35"
                 },
                 txt: "first comment",
                 likedBy: [
                     {
                         _id: "u103",
                         username: "KaDaWa",
-                        imgUrl: "https://robohash.org/KaDaWa"
+                        imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.6435-1/s200x200/45913258_739298549766940_6051018177377206272_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=kuHUGJHLm30AX-aCEzv&_nc_ht=scontent.fsdv3-1.fna&oh=e25dd49915bf5178de75d6bcfb0b7122&oe=61BB2D0B"
                     },
                     {
                         _id: "u101",
@@ -311,7 +311,7 @@ const postDB = [
                 _id: "u102",
                 username: "ronchi",
                 fullname: "Ron Buchris",
-                imgUrl: "https://robohash.org/ronchi"
+                imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t31.18172-1/p200x200/28701103_10215787180259649_3807430208929437705_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=tBxmiY55_DsAX8KPgf5&_nc_ht=scontent.fsdv3-1.fna&oh=6bc7e451bb1a011ac2852447529bdb85&oe=61BADE35"
             },
             {
                 _id: "u101",
@@ -328,7 +328,7 @@ const postDB = [
         createdBy: {
             _id: "u103",
             username: "KaDaWa",
-            imgUrl: "https://robohash.org/KaDaWa"
+            imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.6435-1/s200x200/45913258_739298549766940_6051018177377206272_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=kuHUGJHLm30AX-aCEzv&_nc_ht=scontent.fsdv3-1.fna&oh=e25dd49915bf5178de75d6bcfb0b7122&oe=61BB2D0B"
         },
         loc: {
             lat: 11.11,
@@ -345,14 +345,14 @@ const postDB = [
                 createdBy: {
                     _id: "u102",
                     username: "ronchi",
-                    imgUrl: "https://robohash.org/ronchi"
+                    imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t31.18172-1/p200x200/28701103_10215787180259649_3807430208929437705_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=tBxmiY55_DsAX8KPgf5&_nc_ht=scontent.fsdv3-1.fna&oh=6bc7e451bb1a011ac2852447529bdb85&oe=61BADE35"
                 },
                 txt: "first comment",
                 likedBy: [
                     {
                         _id: "u103",
                         username: "KaDaWa",
-                        imgUrl: "https://robohash.org/KaDaWa"
+                        imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t1.6435-1/s200x200/45913258_739298549766940_6051018177377206272_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=7206a8&_nc_ohc=kuHUGJHLm30AX-aCEzv&_nc_ht=scontent.fsdv3-1.fna&oh=e25dd49915bf5178de75d6bcfb0b7122&oe=61BB2D0B"
                     },
                     {
                         _id: "u101",
@@ -367,11 +367,11 @@ const postDB = [
                 _id: "u102",
                 username: "ronchi",
                 fullname: "Ron Buchris",
-                imgUrl: "https://robohash.org/ronchi"
+                imgUrl: "https://scontent.fsdv3-1.fna.fbcdn.net/v/t31.18172-1/p200x200/28701103_10215787180259649_3807430208929437705_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=7206a8&_nc_ohc=tBxmiY55_DsAX8KPgf5&_nc_ht=scontent.fsdv3-1.fna&oh=6bc7e451bb1a011ac2852447529bdb85&oe=61BADE35"
             }
         ]
     }
 ]
 
-// _save('user', userDB)
-// _save('post', postDB)
+_save('user', userDB)
+_save('post', postDB)
