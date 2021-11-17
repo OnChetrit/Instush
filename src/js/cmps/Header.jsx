@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-
+import { Link } from 'react-router-dom';
 import { ReactComponent as Home } from '../../assets/img/nav/home.svg';
 import { ReactComponent as Direct } from '../../assets/img/nav/direct.svg';
 import { ReactComponent as Add } from '../../assets/img/nav/add.svg';
@@ -18,7 +18,9 @@ export const Header = () => {
           <Search />
         </div>
         <div className="nav-btns flex align-center">
-          <Home />
+          <Link to={'/'}>
+            <Home />
+          </Link>
           <Direct />
           <Add />
           <Explore />

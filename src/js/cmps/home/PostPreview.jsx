@@ -1,16 +1,18 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
 import ReactTimeAgo from 'react-time-ago';
-
 import { ReactComponent as Like } from '../../../assets/img/action/like.svg';
 import { ReactComponent as Comment } from '../../../assets/img/action/comment.svg';
 import { ReactComponent as Share } from '../../../assets/img/action/share.svg';
 import { ReactComponent as Save } from '../../../assets/img/action/save.svg';
 import { ReactComponent as Emoji } from '../../../assets/img/action/emoji.svg';
+import { addLike } from '../../store/actions/post.actions';
 
-export const PostPreview = ({ post }) => {
+export const PostPreview = ({post }) => {
   const [comment, setComment] = useState();
-
+  const { user } = useSelector((state) => state.userModule);
+  const dispatch = useDispatch();
   const handleSubmit = (ev) => {
     ev.preventDefault();
     // dispatch(loginUser({ username, password }));
@@ -32,7 +34,9 @@ export const PostPreview = ({ post }) => {
       </div>
       <div className="post-activities flex space-between">
         <div className="left">
-          <button className="action">
+          <button className="action" onClick={() => {
+            dispatch(addLike(post,user))
+          }}>
             <Like />
           </button>
           <button className="action">
