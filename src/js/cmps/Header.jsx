@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ReactComponent as Home } from '../../assets/img/nav/home.svg';
 import { ReactComponent as Direct } from '../../assets/img/nav/direct.svg';
 import { ReactComponent as Add } from '../../assets/img/nav/add.svg';
@@ -14,6 +14,7 @@ import { Search } from './Search';
 export const Header = () => {
   const { user } = useSelector((state) => state.userModule);
   const { pathname } = useSelector((state) => state.postModule);
+  console.log(`pathname`, pathname);
 
   return (
     <header>
@@ -22,10 +23,16 @@ export const Header = () => {
         <Search />
         <div className="nav-btns flex align-center justify-end">
           <Link to={'/'}>{pathname === '/' ? <HomeActive /> : <Home />}</Link>
-          <Direct />
+          <Link to={'/direct'}>
+            {pathname === '/direct' ? <DirectActive /> : <Direct />}
+          </Link>
           <Add />
-          <Explore />
-          <Activity />
+          <Link to={'/explore'}>
+            {pathname === '/explore' ? <ExploreActive /> : <Explore />}
+          </Link>
+          <Link to={'/activity'}>
+            {pathname === '/activity' ? <ActivityActive /> : <Activity />}
+          </Link>
           <Link to={`/${user.username}`}>
             <img className="profile" src={user.imgUrl} alt="user-profile" />
           </Link>
