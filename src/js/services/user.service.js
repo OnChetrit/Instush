@@ -11,7 +11,8 @@ export const userService = {
     remove,
     update,
     save,
-    getUserByUsername
+    getUserByUsername,
+    toggleFollow
 }
 
 window.userService = userService
@@ -21,6 +22,29 @@ function query() {
     return storageService.query(STORAGE_KEY)
 }
 
+function _createMiniUser(id, username, imgUrl) {
+    return {
+        _id: id,
+        username,
+        imgUrl
+    }
+}
+
+async function toggleFollow(user, profile, isFollowing) {
+    const profileIdx = user.following.findIndex(following => following.username === profile.username)
+    const userIdx = profile.followers.findIndex(following => following.username === user.username)
+    if (isFollowing) {
+        user.following.splice(profileIdx, 1)
+        profile.followers.splice(userIdx, 1)
+    } else {
+        const miniUserToFollow = _createMiniUser(profile._id, profile.username, profile.imgUrl)
+        const miniUserIsFollow = _createMiniUser(user._id, user.username, user.imgUrl)
+        user.following.push(miniUserToFollow)
+        profile.followers.push(miniUserIsFollow)
+    }
+    return await storageService.put(STORAGE_KEY, user)
+
+}
 async function getUserByUsername(username) {
     return await storageService.getByName(STORAGE_KEY,username);
 }

@@ -373,5 +373,5 @@ const postDB = [
     }
 ]
 
-_save('user', userDB)
-_save('post', postDB)
+// _save('user', userDB)
+// _save('post', postDB)

@@ -4,7 +4,7 @@ import { useParams, useHistory } from 'react-router-dom';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 
-import { getUserByUsername } from '../store/actions/user.actions';
+import { toggleFollow, getUserByUsername } from '../store/actions/user.actions';
 import { loadPosts } from '../store/actions/post.actions';
 
 import { UserFollow } from '../cmps/profile/UserFollow';
@@ -13,6 +13,7 @@ import { ProfilePostPreview } from '../cmps/profile/ProfilePostPreview';
 export const UserProfile = () => {
   const { user } = useSelector((state) => state.userModule);
   const { posts } = useSelector((state) => state.postModule);
+  const [isFollowing, setIsFollowing] = useState(false)
   const history = useHistory();
   const params = useParams();
   const [profile, setProfile] = useState(null);
@@ -23,7 +24,8 @@ export const UserProfile = () => {
     dispatch({ type: 'SET_PATHNAME', pathname })
     const userProfile = await getUserByUsername(params.username);
     setProfile(userProfile);
-  }, []);
+    checkIfFollow(userProfile)
+  }, [params.username]);
 
   useEffect(() => {
     dispatch(loadPosts(user, params.username));
@@ -32,7 +34,18 @@ export const UserProfile = () => {
   const isUserProfile = () => {
     return profile?.username === user.username;
   };
+  const checkIfFollow = (profile) => {
+    user.following.forEach(follower => {
+      if (follower.username === profile.username) {
+        return setIsFollowing(true)
+     }
+    });
+  }
 
+  const onToggleFollow = () => {
+    dispatch(toggleFollow(user, profile, isFollowing))
+    setIsFollowing(!isFollowing)
+  }
   return (
     <div className="user-profile flex column main-container">
       <div className="user-details flex">
@@ -47,7 +60,9 @@ export const UserProfile = () => {
                 <button>Edit profile</button>
               </div>
             ) : (
-              <div className="follow">Follow</div>
+              <div className="follow">
+                  <button onClick={() => onToggleFollow()}>{isFollowing ? 'unfollow' : 'follow'}</button>
+                </div>
             )}
           </div>
           {(
